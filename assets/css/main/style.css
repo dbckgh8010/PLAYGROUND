@@ -229,7 +229,7 @@ canvas {height: auto; max-width: 100%;}
     .project-wrap .project-list .project-item .item-txt .item-num {padding-bottom: 30px;}
 }
 @media screen and (max-width: 768px) {
-    .sc-project .project-wrap {padding: 100px 50px;}
+    .sc-project .project-wrap {padding: 100px 50px !important;}
     .project-wrap .project-title {font-size: 40px;}
     .project-wrap .project-list .project-item {padding: 20px;}
 }
