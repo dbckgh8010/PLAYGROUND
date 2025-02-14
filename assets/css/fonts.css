@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Retrosans';
+    src: url("../fonts/establish Retrosans.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Galmuri';
+    src: url("../fonts/Galmuri14.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IAMAPLAYER';
+    src: url('../fonts/I AM A PLAYER.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CookieRun-Regular';
+    src: url('../fonts/CookieRun Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}

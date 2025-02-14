@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="창호의 놀이터">
+    <meta property="og:description" content="윤창호의 포트폴리오">
+    <title>창호의 놀이터</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+    <script src="assets/js/main/main.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="header-wrap">
+                <div class="logo">
+                    <a href="javascript:void(0)" class="logo-link">창호의 놀이터</a>
+                </div>
+                <div class="time-ko">
+                    <div class="day">날짜</div>
+                    <div class="time">시간</div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="sc-banner">
+                <div class="banner-video">
+                    <video class="video-content" autoplay loop muted>
+                        <source src="assets/img/video/2025year.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="banner-inner">
+                    <div class="title">
+                        <span class="text"></span>
+                    </div>
+                    <div class="sub-title">
+                        <span>안녕하세요, 윤창호 입니다. <span class="break">창호의 놀이터에 오신걸 환영합니다.</span></span>
+                    </div>
+                    <div class="sub-text">
+                        <span>PLAYGROUND 라고 지은 이유는<span class="break">즐겁게 공부하자는 이유입니다.</span></span>
+                    </div>
+                </div>
+                <div class="scroll-induce"></div>
+            </section>
+            <section class="sc-about">
+                <div class="about">
+                    <div class="about-wrap">
+                        <div class="about-title">
+                            <h2 class="title-name">About Me</h2>
+                        </div>
+                        <div class="about-list">
+                            <div class="about-main">
+                                <div class="about-left">
+                                    <div class="left-info">
+                                        <div class="info-img">
+                                            <img src="assets/img/main/my-photo.jpg">
+                                        </div>
+                                        <div class="introduce">
+                                            <ul class="card-list">
+                                                <li class="list">
+                                                    <p class="list1-1">이    름 😉 : <span class="list-text1 list-text"></span></p>
+                                                </li>
+                                                <li class="list">
+                                                    <p class="list1-1">생년월일 🎂 : <span class="list-text2 list-text"></span></p>
+                                                </li>
+                                                <li class="list">
+                                                    <p class="list1-1">국적 🌎 : <span class="list-text3 list-text"></span></p>
+                                                </li>
+                                                <li class="list">
+                                                    <p class="list1-1">거주지 🗺️ : <span class="list-text4 list-text"></span></p>
+                                                </li>
+                                                <li class="list">
+                                                    <p class="list1-1 point">나는 노력하는 사람이다.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="about-right">
+                                    <div class="about-mbti">
+                                        <div class="mbti-container">
+                                            <div class="mbti">
+                                                <h3 class="title">MBTI</h3>
+                                                <img src="assets/img/main/ENFJ-T.PNG">
+                                                <p class="sub-title">ENFJ-T</p>
+                                            </div>
+                                            <div class="mbti-progress">
+                                                <ul class="mbti-progress__list">
+                                                    <li class="progress-item item1">
+                                                        <div class="item-main">
+                                                            <div class="item-percent">
+                                                                <strong class="color-blue">64%</strong>
+                                                                <span>외향형</span>
+                                                            </div>
+                                                            <div class="item-bar">
+                                                                <div class="bar-dot">
+                                                                    <div class="dot"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-sub">
+                                                            <span class="item-text select">외향형</span>
+                                                            <span class="item-text">내향형</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="progress-item item2">
+                                                        <div class="item-main">
+                                                            <div class="item-percent">
+                                                                <strong class="color-blue">54%</strong>
+                                                                <span>직관형</span>
+                                                            </div>
+                                                            <div class="item-bar">
+                                                                <div class="bar-dot">
+                                                                    <div class="dot"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-sub">
+                                                            <span class="item-text select">직관형</span>
+                                                            <span class="item-text">관찰형</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="progress-item item3">
+                                                        <div class="item-main">
+                                                            <div class="item-percent">
+                                                                <strong class="color-blue">51%</strong>
+                                                                <span>감정형</span>
+                                                            </div>
+                                                            <div class="item-bar">
+                                                                <div class="bar-dot">
+                                                                    <div class="dot"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-sub">
+                                                            <span class="item-text">사고형</span>
+                                                            <span class="item-text select">감정형</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="progress-item item4">
+                                                        <div class="item-main">
+                                                            <div class="item-percent">
+                                                                <strong class="color-blue">57%</strong>
+                                                                <span>계획형</span>
+                                                            </div>
+                                                            <div class="item-bar">
+                                                                <div class="bar-dot">
+                                                                    <div class="dot"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-sub">
+                                                            <span class="item-text select">계획형</span>
+                                                            <span class="item-text">탐구형</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="progress-item item5">
+                                                        <div class="item-main">
+                                                            <div class="item-percent">
+                                                                <strong class="color-blue">64%</strong>
+                                                                <span>민감형</span>
+                                                            </div>
+                                                            <div class="item-bar">
+                                                                <div class="bar-dot">
+                                                                    <div class="dot"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-sub">
+                                                            <span class="item-text">확신형</span>
+                                                            <span class="item-text select">민감형</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="about-radar">
+                                        <canvas id="radar" class="radar"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="favorite-wrap">
+                        <div class="favorite">
+                            <div class="favorite-title">
+                                <h2 class="title-name">Favorite Me</h2>
+                            </div>
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slide1">
+                                        <div class="slide-img">
+                                            <img src="assets/img/main/basketball.gif">
+                                        </div>
+                                        <div class="slide-text">
+                                            <h3 class="text-title">농구</h3>
+                                            <p class="text-info">
+                                                중학생부터 농구를 좋아했으며<br>
+                                                지금도 좋아하며 농구를 보는것도 좋아합니다
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide2">
+                                        <div class="slide-img">
+                                            <img src="assets/img/main/computer.gif">
+                                        </div>
+                                        <div class="slide-text">
+                                            <h3 class="text-title">컴퓨터</h3>
+                                            <p class="text-info">
+                                                컴퓨터에 관심이 많이 있습니다<br>
+                                                새로운 제품이 나오면 어떤지 궁금해하며<br>
+                                                컴퓨터 관련 YOUTUBE를 자주 챙겨봅니다
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide3">
+                                        <div class="slide-img">
+                                            <img src="assets/img/main/game.gif">
+                                        </div>
+                                        <div class="slide-text">
+                                            <h3 class="text-title">게임</h3>
+                                            <p class="text-info">
+                                                장르를 가리지 않고 게임을 좋아합니다<br>
+                                                주로 가장 많이 했던건 FPS류의 게임을 가장 즐겨 하였고<br>
+                                                현재는 LostArk라는 게임을 즐겨합니다<br>
+                                                전략/전술 , 패턴 이런류의 게임을 좋아합니다
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide4">
+                                        <div class="slide-img">
+                                            <img src="assets/img/main/ott.gif">
+                                        </div>
+                                        <div class="slide-text">
+                                            <h3 class="text-title">OTT시청</h3>
+                                            <p class="text-info">
+                                                요즘은 TV 시청보다는 OTT시청이 더 많다고 생각합니다<br>
+                                                다양하게 내가 보고 싶은걸 시간에 구애받지 않고 볼수있어<br>
+                                                많이 챙겨보는거 같습니다
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide5">
+                                        <div class="slide-img">
+                                            <img src="assets/img/main/youtube.gif">
+                                        </div>
+                                        <div class="slide-text">
+                                            <h3 class="text-title">YOUTUBE시청</h3>
+                                            <p class="text-info">
+                                                요즘은 다양한 사람들이 YOUTUBE로 정보를 공유하고<br>
+                                                재밌는게 볼게 많아서 좋아합니다
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide6">
+                                        <div class="slide-img">
+                                            <img src="assets/img/main/cooking.gif">
+                                        </div>
+                                        <div class="slide-text">
+                                            <h3 class="text-title">요리</h3>
+                                            <p class="text-info">
+                                                원래는 요리를 할줄 몰랐습니다<br>
+                                                그러다가 요리를 해서 먹다 보니깐<br>
+                                                요리 레시피를 찾아서 만들어서 먹어고 합니다 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-skill">
+                <div class="skill-wrap">
+                    <div class="skill-container">
+                        <h2 class="skill-title">SKILL</h2>
+                        <ul class="skill">
+                            <li class="skill-list html">
+                                <div class="skill-circle" data-degree="80" data-color="#e44d26">
+                                    <div class="outer-ring">
+                                        <div class="inner-ring">
+                                            <div class="circle-text">
+                                                <h3 class="circle-percent">0<span>%</span></h3>
+                                                <h4 class="circle-label">HTML</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-text">
+                                    <p class="skill-info">HTML은 마크업을 기준으로 작성하고 있습니다.</p>
+                                </div>
+                            </li>
+                            <li class="skill-list css">
+                                <div class="skill-circle" data-degree="80" data-color="#264de4">
+                                    <div class="outer-ring">
+                                        <div class="inner-ring">
+                                            <div class="circle-text">
+                                                <h3 class="circle-percent">0<span>%</span></h3>
+                                                <h4 class="circle-label">CSS</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-text">
+                                    <p class="skill-info">최대한 CSS로 구동을 하려고 노력하고 있습니다.</p>
+                                </div>
+                            </li>
+                            <li class="skill-list js">
+                                <div class="skill-circle" data-degree="40" data-color="#d6ba32">
+                                    <div class="outer-ring">
+                                        <div class="inner-ring">
+                                            <div class="circle-text">
+                                                <h3 class="circle-percent">0<span>%</span></h3>
+                                                <h4 class="circle-label">JS</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-text">
+                                    <p class="skill-info">JS는 다양한 라이브러리를 이용해서<br> juqery로 작성하고 있습니다.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="sc-project">
+                <div class="project-wrap">
+                    <h2 class="project-title">Project</h2>
+                    <ul class="project-list" animation="list">
+                        <li class="project-item item1" animation-item="10px">
+                            <div class="item-txt">
+                                <span class="item-num">01</span>
+                                <div class="txt">
+                                    <h3 class="item-title">신세계L&B</h3>
+                                    <ul class="item-tools">
+                                        <li class="tool">
+                                            <span>기여도: 100%</span>
+                                        </li>
+                                        <li class="tool">
+                                            <span>#JS</span>
+                                        </li>
+                                        <li class="tool">
+                                            <span>#jQeury</span>
+                                        </li>
+                                        <li class="tool">
+                                            <span>#Slick</span>
+                                        </li>
+                                    </ul>
+                                    <p class="info-txt">첫 클론코딩으로 <strong>slick</strong>을 이용해서 슬라이드를 구현해 봤습니다.</p>
+                                    <div class="item-link">
+                                        <a href="https://dbckgh8010.github.io/shinsegae-lnb/" target="_blank">Go Site</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-img">
+                                <img src="assets/img/main/shinsegae-lnb1.png">
+                            </div>
+                        </li>
+                        <li class="project-item item2" animation-item="20px">
+                            <div class="item-txt">
+                                <span class="item-num">02</span>
+                                <div class="txt">
+                                    <h3 class="item-title">한솔PNS</h3>
+                                    <ul class="item-tools">
+                                        <li class="tool">
+                                            <span>기여도: 100%</span>
+                                        </li>
+                                        <li class="tool">
+                                            <span>#jQeury</span>
+                                        </li>
+                                        <li class="tool">
+                                            <span>#Slick</span>
+                                        </li>
+                                    </ul>
+                                    <p class="info-txt">두번째 클론 코딩으로 <strong>반응형</strong>까지 구현해봤습니다.</p>
+                                    <div class="item-link">
+                                        <a href="https://dbckgh8010.github.io/hansolpns/" target="_blank">Go Site</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-img">
+                                <img src="assets/img/main/hansolpns1.png">
+                            </div>
+                        </li>
+                        <li class="project-item item3" animation-item="30px">
+                            <div class="item-txt">
+                                <span class="item-num">03</span>
+                                <div class="txt">
+                                    <h3 class="item-title">Lespace</h3>
+                                    <ul class="item-tools">
+                                        <li class="tool">
+                                            <span>기여도: 100%</span>
+                                        </li>
+                                        <li class="tool">
+                                            <span>#Swiper</span>
+                                        </li>
+                                        <li class="tool">
+                                            <span>#jQeury</span>
+                                        </li>
+                                        <li class="tool">
+                                            <span>#GSAP</span>
+                                        </li>
+                                    </ul>
+                                    <p class="info-txt">세번째 클론 코딩으로 <strong>GSAP</strong>를 이용해봤습니다.</p>
+                                    <div class="item-link">
+                                        <a href="https://dbckgh8010.github.io/Lespace/" target="_blank">Go Site</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-img">
+                                <img src="assets/img/main/lespace.PNG">
+                            </div>
+                        </li>
+                        <li class="project-item item4" animation-item="40px">
+                            <div class="item-txt">
+                                <span class="item-num">04</span>
+                                <div class="txt">
+                                    <h3 class="item-title">KIA</h3>
+                                    <ul class="item-tools">
+                                        <li class="tool">
+                                            <span>기여도: 100%</span>
+                                        </li>
+                                        <li class="tool">
+                                            <span>#Swiper</span>
+                                        </li>
+                                        <li class="tool">
+                                            <span>#jQeury</span>
+                                        </li>
+                                    </ul>
+                                    <p class="info-txt">네번째 클론 코딩으로 대중적인 웹사이트를 한번 만들어 봤습니다.<br>탭을 이용해서 슬라이드도 구현해봤습니다.</p>
+                                    <div class="item-link">
+                                        <a href="https://dbckgh8010.github.io/KIA/" target="_blank">Go Site</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-img">
+                                <img src="assets/img/main/kia.PNG">
+                            </div>
+                        </li>
+                        <li class="project-item item5" animation-item="50px">
+                            <div class="item-txt">
+                                <span class="item-num">05</span>
+                                <div class="txt">
+                                    <h3 class="item-title">portfolio</h3>
+                                    <ul class="item-tools">
+                                        <li class="tool">
+                                            <span>기여도: 100%</span>
+                                        </li>
+                                    </ul>
+                                    <p class="info-txt">
+                                        포트폴리오를 처음 만들어 본 페이지입니다.
+                                    </p>
+                                    <div class="item-link">
+                                        <a href="https://dbckgh8010.github.io/portfolio/" target="_blank">Go Site</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-img">
+                                <img src="assets/img/main/ready.png" class="img-ready">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-wrap">
+                <div class="footer-left">
+                    <div class="name">
+                        <h3 class="eng-name">ENG : YunChangHo</h3>
+                        <h3 class="kor-name">KOR : 윤 창 호</h3>
+                        <h4 class="email">dbckgh8010@naver.com</h4>
+                    </div>
+                    <div class="sns-list">
+                        <a href="javascript:void(0)" class="sns-github">
+                            <img src="assets/img/main/github.png" alt="깃허브 링크 이미지">
+                        </a>
+                        <a href="javascript:void(0)" class="sns-kakao">
+                            <img src="assets/img/main/kakao_open_talk.png" alt="카카오 QR코드">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-txt">지금까지 윤창호의 <span class="break">포트폴리오를 봐주셔서</span><span class="break">감사합니다!</span></p>
+                    <img src="assets/img/main/1.gif">
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 Yun-Changho All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
