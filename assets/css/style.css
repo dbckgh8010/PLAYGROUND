@@ -143,7 +143,7 @@ canvas {height: auto; max-width: 100%;}
 @media screen and (max-width: 1280px) {
     .about-wrap .about-list .about-main {display: flex; flex-direction: column; justify-content: center; align-items: center;}
     .about-wrap .about-list .left-info {padding: 0 0 50px;}
-    .favorite-wrap .favorite .swiper .swiper-slide {display: flex; justify-content: space-between;}
+    .favorite-wrap .favorite .swiper .swiper-slide {display: flex;}
     .favorite-wrap .favorite .swiper .swiper-slide .slide-img {width: 400px; height: 200px;}
     .favorite-wrap .favorite .swiper .swiper-slide .slide-text {width: 400px;}
 }
