@@ -40,6 +40,15 @@ $(function() {
         slidesPerView: 1,
         grabCursor: true,
         loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            bulletActiveClass: 'on',
+            clickable: true
+        },
+        autoplay: {
+            delay: 3200,
+            disableOnInteraction: false,
+        },
         breakpoints: {
             1500: {slidesPerView: 3},
             769: {slidesPerView: 2}

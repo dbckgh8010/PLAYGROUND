@@ -128,13 +128,16 @@ canvas {height: auto; max-width: 100%;}
 .favorite-wrap {padding: 80px 100px;}
 .favorite-wrap .favorite .favorite-title {display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 100px 0;}
 .favorite-wrap .favorite .favorite-title .title-name {display: flex; align-items: center; width: 100%; font-size: 64px; color: #0a1c2d; text-wrap: nowrap; text-shadow: 2px 2px 4px rgba(255, 255, 255, 1), -1px -1px 4px rgba(255, 255, 255, 1);}
-.favorite-wrap .favorite .swiper {display: flex; align-items: center; justify-content: center;}
+.favorite-wrap .favorite .swiper {display: flex; flex-direction: column; align-items: center; justify-content: center; height: 500px;}
 .favorite-wrap .favorite .swiper .swiper-slide {display: flex; flex-direction: column; align-items: center;}
 .favorite-wrap .favorite .swiper .swiper-slide .slide-img {width: 420px; height: 200px;}
 .favorite-wrap .favorite .swiper .swiper-slide .slide-img img {width: 100%; height: 100%;}
 .favorite-wrap .favorite .swiper .swiper-slide .slide-text {width: 420px; padding-top: 20px;}
 .favorite-wrap .favorite .swiper .swiper-slide .slide-text .text-title {color: #0a1c2d; text-wrap: nowrap; text-shadow: 2px 2px 4px rgba(255, 255, 255, 1), -1px -1px 4px rgba(255, 255, 255, 1);}
 .favorite-wrap .favorite .swiper .swiper-slide .slide-text .text-info {padding-top: 10px; font-size: 18px; line-height: 20px; color: #c2e8ff;}
+.favorite-wrap .favorite .swiper .swiper-pagination {position: absolute;}
+.favorite-wrap .favorite .swiper .swiper-pagination .swiper-pagination-bullet {margin-left: 20px; padding: 2px; background-color: #fff; opacity: 0.5;}
+.favorite-wrap .favorite .swiper .swiper-pagination .swiper-pagination-bullet.on {background-color: #001222; opacity: 1;}
 
 /*section2 반응형*/
 @media screen and (max-width: 1280px) {
@@ -159,6 +162,7 @@ canvas {height: auto; max-width: 100%;}
     .favorite-wrap .favorite .favorite-title .title-name {font-size: 40px;}
     .favorite-wrap .favorite .swiper .swiper-slide .slide-img {width: 400px; height: 200px;}
     .favorite-wrap .favorite .swiper .swiper-slide .slide-text {width: 400px;}
+    .swiper .swiper-pagination {padding-top: 50px;}
 }
 @media screen and (max-width: 480px) {
     .favorite-wrap .favorite .swiper .swiper-slide .slide-img {width: 300px; height: 150px;}
