@@ -174,6 +174,7 @@ canvas {height: auto; max-width: 100%;}
 .skill-wrap .skill-container {padding: 100px; padding-bottom: 200px;}
 .skill-wrap .skill-container .skill-title {padding-bottom: 100px; font-size: 64px; color: #0a1c2d; text-shadow: 2px 2px 4px rgba(255, 255, 255, 1), -1px -1px 4px rgba(255, 255, 255, 1);}
 .skill-wrap .skill-container .skill {display: flex; align-items: center; justify-content: space-between;  padding: 0 200px;}
+.skill-wrap .skill-container .skill .skill-list {display: flex; flex-direction: column; justify-content: center; align-items: center;}
 .skill-wrap .skill-container .skill .skill-circle {position: relative; display: flex; align-items: center; justify-content: center; width: 200px; height: 200px; margin: 0 100px;} 
 .skill-wrap .skill-container .skill .skill-circle .outer-ring {position: absolute; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; border-radius: 50%;}
 .skill-wrap .skill-container .skill .skill-circle .outer-ring .inner-ring {display: flex; align-items: center; justify-content: center; width: 190px; height: 190px; border-radius: 50%; background: rgba(0, 0, 0, 0.3);}
