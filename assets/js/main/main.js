@@ -1,4 +1,5 @@
 $(function() {
+/*헤더 영역에 시계 부분*/
     setInterval(function() {
         var dateInfo = new Date();
         var hour = String(dateInfo.getHours()).padStart(2, '0');  // 2자리로 맞추기
@@ -14,6 +15,7 @@ $(function() {
         $(".time").html(hour + ":" + min + ":" + sec);
     }, 1000);
 
+/*메인 페이지에 텍스트 출력 부분*/
     const content = "Hellow, this is CHANGHO PLAYGROUND.";
     let i = 0;
 
@@ -33,51 +35,7 @@ $(function() {
     };
     
     typing();
-
-    const text1 = "윤창호";
-    const text2 = "1996.05.24";
-    const text3 = "대한민국";
-    const text4 = "성동구";
-
-    let i1 = 0, i2 = 0, i3 = 0, i4 = 0;
-    const delay = 300;
-    const restartDelay = 4000;
-
-    function startTyping() {
-        const interval = setInterval(() => {
-            if (i1 <text1.length) {
-                $(".list-text1").append(text1.charAt(i1));
-                i1++;
-            }
-            if (i2 <text2.length) {
-                $(".list-text2").append(text2.charAt(i2));
-                i2++;
-            }
-            if (i3 <text3.length) {
-                $(".list-text3").append(text3.charAt(i3));
-                i3++;
-            }
-            if (i4 <text4.length) {
-                $(".list-text4").append(text4.charAt(i4));
-                i4++;
-            }
-            if (i1 >= text1.length && i2 >= text2.length && i3 >= text3.length && i4 >= text4.length) {
-                clearInterval(interval);
-                setTimeout(() => {
-                    i1 = 0, i2 = 0, i3 = 0, i4 = 0;
-                    $(".list-text1").empty();
-                    $(".list-text2").empty();
-                    $(".list-text3").empty();
-                    $(".list-text4").empty();
-
-                    startTyping();
-                }, restartDelay);
-            }
-        }, delay);
-    }
-
-    startTyping();
-
+/*section2 favorite swiper부분*/
     var mySwiper1 = new Swiper(".sc-about .swiper", {
         slidesPerView: 1,
         grabCursor: true,
@@ -88,12 +46,13 @@ $(function() {
         }
     });
 
+/*section2 about부분 radar chart*/
     var chart = $("#radar")[0].getContext("2d");
     var data = {
-        labels: ['부정적', '흡수력', '창의력', '도전정신', '꼼꼼함', '집중력', '긍정', '끈기'],
+        labels: ['', '부정적', '흡수력', '창의력', '도전정신', '꼼꼼함', '집중력', '긍정', '끈기'],
         datasets: [{
             label: '나의 그래프',
-            data: [0, 8, 5, 8, 9, 9, 10, 10],
+            data: [0, 2, 8, 6, 8, 9, 9, 10, 10],
             backgroundColor: 'rgba(255,99,132,0.2)',
             borderColor: 'rgb(255, 99, 132)',
             pointBackgroundColor: 'rgba(255,99,132,1)',
@@ -119,30 +78,40 @@ $(function() {
         options: options
     });
 
-    $(".skill-circle").each(function () {
-        let $progress = $(this);
-        let degree = 0;
-        let targetDegree = parseInt($progress.data("degree"));
-    
-        let color = $progress.data("color");
-        let $number = $progress.find(".circle-percent");
-    
-        let interval = setInterval(function () {
-            degree += 1;
-    
-            if (degree > targetDegree) {
-            clearInterval(interval);
-            return;
-            }
-    
-            $progress.find(".outer-ring").css(
-                "background",
-                `conic-gradient(${color} ${degree}%, #222 0%)`
-            );
-            $number.html(degree + `<span>%</span>`).css("color", color);
-        }, 50);
-    });
+/*section3 skill 부분 서클 채워지고 초기화되고 다시 채워지는*/
+    function animateProgress() {
+        $(".skill-circle").each(function () {
+            let $progress = $(this);
+            let degree = 0;
+            let targetDegree = parseInt($progress.data("degree"));
+            let color = $progress.data("color");
+            let $number = $progress.find(".circle-percent");
 
+            $progress.find(".outer-ring").css("background", `conic-gradient(#222 0%, #222 100%)`);
+            $number.html("0<span>%</span>").css("color", color);
+    
+            setTimeout(() => {
+                let interval = setInterval(function () {
+                    degree += 1;
+                    if (degree > targetDegree) {
+                        clearInterval(interval);
+                        return;
+                    }
+                    $progress.find(".outer-ring").css(
+                        "background",
+                        `conic-gradient(${color} ${degree}%, #222 0%)`
+                    );
+                    $number.html(degree + `<span>%</span>`).css("color", color);
+                }, 30);
+            }, 500);
+        });
+    }
+    
+    animateProgress();
+    
+    setInterval(animateProgress, 8000);
+
+/*section4 project부분*/
     gsap.registerPlugin(ScrollTrigger);
     gsap.registerPlugin(ScrollToPlugin);
 
@@ -152,7 +121,7 @@ $(function() {
     const items = gsap.utils.toArray(".project-item");
 
     ScrollTrigger.matchMedia({
-        // 768px 이상일 때
+        // 769px 이상일 때
         "(min-width: 769px)": function() {
             items.forEach((item, index) => {
                 let tl = gsap.timeline({
@@ -182,7 +151,7 @@ $(function() {
                         trigger: item,
                         start: "top 20%",
                         endTrigger: ".project-wrap",
-                        end: "bottom 700",
+                        end: "bottom 760",
                         pin: true,
                         pinSpacing: false,
                         scrub: true,

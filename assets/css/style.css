@@ -2,10 +2,10 @@ html, body {margin: 0; padding: 0; overflow-x: hidden;}
 
 /*헤더 부분*/
 .header-wrap {position: fixed; display: flex; justify-content: space-between; align-items: center; width: calc(100% - 40px); padding: 0 20px; z-index: 1;}
-.header-wrap .logo {width: 200px; height: 80px;}
-.header-wrap .logo .logo-link {display: block; max-width: 100%; height: 100%; text-indent: -9999px; background: url("../img/logo.png") no-repeat center / cover; z-index: 5;}
+.header-wrap .logo {width: 200px; height: 100px;}
+.header-wrap .logo .logo-link {display: flex; align-items: center; max-width: 100%; height: 100%; font-size: 25px; font-weight: 900; line-height: 30px; text-align: center; color: #86c2fa; z-index: 5;}
 .header-wrap .time-ko {display: flex; flex-direction: column; justify-content: center; align-items: center; width: auto; height: 100px;}
-.header-wrap .time-ko .day {font-size: 20px; font-weight: 600; color:#636363;}
+.header-wrap .time-ko .day {font-size: 20px; font-weight: 600; color:#86c2fa;}
 .header-wrap .time-ko .time {font-size: 35px; font-weight: bold; line-height: 50px; color: #3f93d3;}
 /*헤더 반응형*/
 @media screen and (max-width: 768px) {
@@ -33,6 +33,7 @@ html, body {margin: 0; padding: 0; overflow-x: hidden;}
 .sc-banner .banner-inner .sub-title span {font-size: 20px; font-weight: 900; line-height: 40px; color: #c2e8ff;}
 .sc-banner .banner-inner .sub-text {padding-top: 60px;}
 .sc-banner .banner-inner .sub-text span {font-size: 15px; font-weight: 900; line-height: 20px; color: #9bb4c4;} 
+.sc-banner .banner-inner .sub-text .break {padding-left: 10px;}
 .sc-banner .scroll-induce {position: absolute; left: 50%; top: 90%; transform: translateX(-50%); width: 20px; height: 30px; border: 2px solid rgb(255, 255, 255); border-radius: 50px;}
 .sc-banner .scroll-induce::before {content: ""; position: absolute; left: 50%; top: 4px; transform: translateX(-50%); width: 2px; height: 8px; background-color: rgb(255, 255, 255); animation: scrollMove 2s infinite;}
 @keyframes scrollMove {
@@ -65,20 +66,20 @@ html, body {margin: 0; padding: 0; overflow-x: hidden;}
 
 /*section2 부분*/
 /*about*/
-.sc-about .about {position: relative; height: 100%; background-color: #96c2ad;}
+.sc-about .about {position: relative; height: 100%; background-color: #2a606a;}
 .about-wrap .about-title {display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 100px 0;}
-.about-wrap .about-title .title-name {display: flex; align-items: center; width: 100%; padding-left: 100px; font-size: 64px; font-weight: 900; color: #51a6f5; text-wrap: nowrap; text-shadow: 2px 2px 1px rgb(255, 255, 255);}
+.about-wrap .about-title .title-name {display: flex; align-items: center; width: 100%; padding-left: 100px; font-size: 64px; font-weight: 900; color: #0a1c2d; text-wrap: nowrap; text-shadow: 2px 2px 4px rgba(255, 255, 255, 1), -1px -1px 4px rgba(255, 255, 255, 1);}
 .about-wrap .about-title img {width: 100px; height: 100px; padding-right: 60px;}
 .about-wrap .about-list {padding: 0 100px;}
 .about-wrap .about-list .about-main {display: flex; justify-content: center;}
 .about-wrap .about-list .left-info {display: flex; flex-direction: column; padding-right: 100px;}
 .about-wrap .about-list .left-info .info-img img {width: 350px; height: 500px;}
-.about-wrap .about-list .left-info .introduce {display: flex; align-items: center; width: 306px; padding: 20px; border: 2px solid #0f4a6d; background-color: rgb(15, 74, 109, 0.2);}
-.about-wrap .about-list .left-info .introduce .list {font-size: 20px; padding-bottom: 50px;}
+.about-wrap .about-list .left-info .introduce {display: flex; align-items: center; width: 326px; padding: 22px 10px; border: 2px solid #0f4a6d; background-color: rgb(15, 74, 109, 0.2);}
+.about-wrap .about-list .left-info .introduce .list {font-size: 20px; padding-bottom: 40px;}
 .about-wrap .about-list .left-info .introduce .list:last-child {padding-bottom: 0;}
-.about-wrap .about-list .left-info .introduce .list .list1-1 {font-weight: 900; color: #3f93d3; text-shadow: 1px 1px 1px rgb(255, 255, 255);}
-.about-wrap .about-list .left-info .introduce .list .list1-1 .list-text {color: #4c7086;}
-.about-wrap .about-list .left-info .introduce .list .point {color: #ff6384;}
+.about-wrap .about-list .left-info .introduce .list .list1-1 {font-weight: 900; color: #0a1c2d;}
+.about-wrap .about-list .left-info .introduce .list .list1-1 .list-text {line-height: 30px; letter-spacing: 2px; color: #02132b;}
+.about-wrap .about-list .left-info .introduce .list .point {color: #ff6384; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), -2px -2px 4px rgba(0, 0, 0, 0.7);}
 .about-wrap .about-list .about-mbti .mbti-container {display: flex; margin-bottom: 40px;}
 .about-wrap .about-list .about-mbti .mbti-container .mbti {display: flex; flex-direction: column; align-items: center; justify-content: center; height: 480px; padding: 10px; margin-right: 10px; font-weight: 900; color: #21252c; border: 2px solid #fff; border-radius: 15px; background-color: rgba(255, 255, 255, 0.3);}
 .about-wrap .about-list .about-mbti .mbti-container .mbti img {display: block; width: 177px; padding: 40px;}
@@ -126,14 +127,14 @@ canvas {height: auto; max-width: 100%;}
 /*favorite*/
 .favorite-wrap {padding: 80px 100px;}
 .favorite-wrap .favorite .favorite-title {display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 100px 0;}
-.favorite-wrap .favorite .favorite-title .title-name {display: flex; align-items: center; width: 100%; font-size: 64px; color: #51a6f5; text-wrap: nowrap; text-shadow: 2px 2px 1px rgb(255, 255, 255);}
+.favorite-wrap .favorite .favorite-title .title-name {display: flex; align-items: center; width: 100%; font-size: 64px; color: #0a1c2d; text-wrap: nowrap; text-shadow: 2px 2px 4px rgba(255, 255, 255, 1), -1px -1px 4px rgba(255, 255, 255, 1);}
 .favorite-wrap .favorite .swiper {display: flex; align-items: center; justify-content: center;}
 .favorite-wrap .favorite .swiper .swiper-slide {display: flex; flex-direction: column; align-items: center;}
 .favorite-wrap .favorite .swiper .swiper-slide .slide-img {width: 420px; height: 200px;}
 .favorite-wrap .favorite .swiper .swiper-slide .slide-img img {width: 100%; height: 100%;}
 .favorite-wrap .favorite .swiper .swiper-slide .slide-text {width: 420px; padding-top: 20px;}
-.favorite-wrap .favorite .swiper .swiper-slide .slide-text .text-title {color: #4298b4; text-shadow: 2px 2px 0 rgb(20, 36, 46);}
-.favorite-wrap .favorite .swiper .swiper-slide .slide-text .text-info {padding-top: 10px; line-height: 20px; color: #c2e8ff;}
+.favorite-wrap .favorite .swiper .swiper-slide .slide-text .text-title {color: #0a1c2d; text-wrap: nowrap; text-shadow: 2px 2px 4px rgba(255, 255, 255, 1), -1px -1px 4px rgba(255, 255, 255, 1);}
+.favorite-wrap .favorite .swiper .swiper-slide .slide-text .text-info {padding-top: 10px; font-size: 18px; line-height: 20px; color: #c2e8ff;}
 
 /*section2 반응형*/
 @media screen and (max-width: 1280px) {
@@ -169,21 +170,21 @@ canvas {height: auto; max-width: 100%;}
 
 /*section3 부분*/
 /*skill*/
-.sc-skill .skill-wrap {display: block; height: auto; background-color: #96c2ad;}
-.skill-wrap .skill-container {padding: 100px;}
-.skill-wrap .skill-container .skill-title {padding-bottom: 100px; font-size: 64px; color: #3f93d3; text-shadow: 2px 2px 1px rgb(255, 255, 255);}
-.skill-wrap .skill-container .skill {display: flex; align-items: center; justify-content: center;}
+.sc-skill .skill-wrap {display: block; height: auto; background-color: #2a606a;}
+.skill-wrap .skill-container {padding: 100px; padding-bottom: 200px;}
+.skill-wrap .skill-container .skill-title {padding-bottom: 100px; font-size: 64px; color: #0a1c2d; text-shadow: 2px 2px 4px rgba(255, 255, 255, 1), -1px -1px 4px rgba(255, 255, 255, 1);}
+.skill-wrap .skill-container .skill {display: flex; align-items: center; justify-content: space-between;  padding: 0 200px;}
 .skill-wrap .skill-container .skill .skill-circle {position: relative; display: flex; align-items: center; justify-content: center; width: 200px; height: 200px; margin: 0 100px;} 
 .skill-wrap .skill-container .skill .skill-circle .outer-ring {position: absolute; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; border-radius: 50%;}
-.skill-wrap .skill-container .skill .skill-circle .outer-ring .inner-ring {display: flex; align-items: center; justify-content: center; width: 190px; height: 190px; border-radius: 50%; background: rgba(0, 0, 0, 0.5);}
+.skill-wrap .skill-container .skill .skill-circle .outer-ring .inner-ring {display: flex; align-items: center; justify-content: center; width: 190px; height: 190px; border-radius: 50%; background: rgba(0, 0, 0, 0.3);}
 .skill-wrap .skill-container .skill .skill-circle .outer-ring .inner-ring .circle-text {display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100px; height: 100px; font-size: 22px; font-weight: bold; color: #fff; text-align: center; background-color: #333; border-radius: 50%; box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);}
 .skill-wrap .skill-container .skill .skill-circle .outer-ring .inner-ring .circle-text .circle-percent {font-size: 36px;}
 .skill-wrap .skill-container .skill .skill-circle .outer-ring .inner-ring .circle-text .circle-percent span {font-size: 18px;}
 .skill-wrap .skill-container .skill .skill-circle .outer-ring .inner-ring .circle-text .circle-label {font-size: 14px; margin-top: 5px;}
-.skill .html .circle-text {border: 5px solid #e44d26;}
-.skill .css .circle-text {border: 5px solid #264de4;}
-.skill .js .circle-text {border: 5px solid #d6ba32;}
-.skill-wrap .skill-container .skill .skill-list .skill-text .skill-info {display: flex; align-items: center; justify-content: center; height: 100px; padding: 20px; margin: 50px 10px 0 0; color: #fff; border: 1px solid #3f93d3; border-radius: 20px;}
+.skill .html .circle-text {border: 5px solid #dd6547;}
+.skill .css .circle-text {border: 5px solid #3959da;}
+.skill .js .circle-text {border: 5px solid #d6c157;}
+.skill-wrap .skill-container .skill .skill-list .skill-text .skill-info {display: flex; align-items: center; justify-content: center; height: 100px; padding: 20px; margin: 50px 10px 0 0; font-size: 18px; line-height: 22px; color: #c2e8ff; border: 3px solid #0a1c2d; border-radius: 20px; background-color: rgba(0, 11, 43, 0.76);}
 
 /*section3 반응형*/
 @media screen and (max-width: 1280px) {
@@ -201,8 +202,9 @@ canvas {height: auto; max-width: 100%;}
 
 /*section4 부분*/
 /*project*/
-.sc-project .project-wrap {background: url('../img/main/section-bg3.jpg') no-repeat center / cover; height: 100%; padding: 200px 100px 305px;}
-.project-wrap .project-title {padding-bottom: 100px; font-size: 64px; color: #3f93d3; text-shadow: 2px 2px 1px rgb(255, 255, 255);}
+.sc-project .project-wrap {background: url('../img/main/section-bg5.jpg') no-repeat center / cover; height: 100%; padding: 200px 100px 305px;}
+.project-wrap .project-title {padding-bottom: 100px; font-size: 64px; color: #0a1c2d; text-shadow: 2px 2px 4px rgba(255, 255, 255, 1), -1px -1px 4px rgba(255, 255, 255, 1);}
+.project-wrap .project-list {padding: 0 200px;}
 .project-wrap .project-list .project-item {position: relative; display: flex; justify-content: space-between; height: 100%; padding: 80px; margin-bottom: 60px; border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 30px; background-color: rgba(255, 255, 255, 1);}
 .project-wrap .project-list .project-item .item-txt {display: flex; flex-direction: column; justify-content: space-between;}
 .project-wrap .project-list .project-item .item-txt .item-num {font-size: 70px; color: rgba(38, 46, 64, 0.5);}
@@ -215,20 +217,19 @@ canvas {height: auto; max-width: 100%;}
 .project-wrap .project-list .project-item .item-txt .txt .item-link {display: flex; justify-content: center; align-items: center; width: 80px; height: 24px; border: 1px solid #131b28; border-radius: 30px; background-color: #131b28; }
 .project-wrap .project-list .project-item .item-txt .txt .item-link a {font-weight: 900; color: rgba(255, 255, 255, 0.7);}
 .project-wrap .project-list .project-item .item-img {display: block; max-width: 500px; max-height: 300px; padding-bottom: 50px;}
-.project-wrap .project-list .project-item .item-img img {width: 100%; height: 100%; border-radius: 30px;}
+.project-wrap .project-list .project-item .item-img img {width: 100%; height: 100%;}
 .project-wrap .project-list .project-item .item-img .img-ready {opacity: 0.7;}
-.project-wrap .project-list .item1 {background-color: #4c7086; border: 1px solid #4c7086;}
-.project-wrap .project-list .item3 {background-color: #4c7086; border: 1px solid #4c7086;}
-.project-wrap .project-list .item5 {background-color: #4c7086; border: 1px solid #4c7086;}
 
 /*section4 반응형 부분*/
 @media screen and (max-width: 1024px) {
+    .project-wrap .project-list {padding: 0 50px;}
     .project-wrap .project-list .project-item {display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 40px; margin-bottom: 100px;}
     .project-wrap .project-list .project-item .txt {display: flex; flex-direction: column; justify-content: center; align-items: center;}
     .project-wrap .project-list .project-item .item-img {display: flex; justify-content: center; align-items: center; padding-top: 10px; padding-bottom: 0;}
     .project-wrap .project-list .project-item .item-txt .item-num {padding-bottom: 30px;}
 }
 @media screen and (max-width: 768px) {
+    .project-wrap .project-list {padding: 0;}
     .sc-project .project-wrap {padding: 100px 50px;}
     .project-wrap .project-title {font-size: 40px;}
     .project-wrap .project-list .project-item {padding: 20px;}
@@ -247,9 +248,7 @@ canvas {height: auto; max-width: 100%;}
 .footer-wrap .footer-left .name .email {font-size: 36px; color: #3f93d3;}
 .footer-wrap .footer-left .sns-list img {width: 100px; height: 100px; padding-right: 50px;}
 .footer-wrap .footer-right {display: flex; flex-direction: column; align-items: center; justify-content: center;}
-.footer-wrap .footer-right .footer-txt {padding: 15px 0; font-size: 24px; font-weight: 900; color: #fff;}
-
-.footer-wrap .footer-right img {width: 300px; height: 300px;}
+.footer-wrap .footer-right .footer-txt {padding: 15px 0; font-size: 24px; font-weight: 900; letter-spacing: 1px; color: #fff;}
 .footer .copyright {display: flex; justify-content: center; align-items: center; width: 100%; margin-bottom: 20px; font-size: 18px; font-weight: 900; color: #aaaaaa;}
 
 /*footer 반응형 부분*/
@@ -285,11 +284,12 @@ canvas {height: auto; max-width: 100%;}
     .footer-wrap .footer-left .name .email {font-size: 24px;}
 }
 /*font*/
-.header-wrap .time-ko .day, .time{font-family: 'Galmuri', sans-serif !important;}
+.header-wrap .logo .logo-link {font-family: 'Retrosans', sans-serif !important;}
+.header-wrap .time-ko .day, .time{font-family: 'Retrosans', sans-serif !important;}
 .sc-banner .sub-title span {font-family: 'Galmuri', sans-serif !important;}
 .sc-banner .sub-text span {font-family: 'Galmuri', sans-serif !important;}
-.about-wrap .about-list .left-info .introduce .list .list1-1 {font-family: 'Galmuri', sans-serif !important;}
-.about-wrap .about-list .left-info .introduce .list .list1-1 .list-text {font-family: 'Galmuri', sans-serif !important;}
+.about-wrap .about-list .left-info .introduce .list .list1-1 {font-family: 'Retrosans', sans-serif !important;}
+.about-wrap .about-list .left-info .introduce .list .list1-1 .list-text {font-family: 'Retrosans', sans-serif !important;}
 .about-wrap .about-title .title-name {font-family: 'IAMAPLAYER', sans-serif !important;}
 .favorite-wrap .favorite .favorite-title .title-name {font-family: 'IAMAPLAYER', sans-serif !important;}
 .skill-wrap .skill-container .skill-title {font-family: 'IAMAPLAYER', sans-serif !important;}
