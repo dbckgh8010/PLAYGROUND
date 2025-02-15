@@ -1,5 +1,5 @@
 html, body {margin: 0; padding: 0; overflow-x: hidden;}
-
+p {word-break: keep-all;}
 /*헤더 부분*/
 .header-wrap {position: fixed; display: flex; justify-content: space-between; align-items: center; width: calc(100% - 40px); padding: 0 20px; z-index: 1;}
 .header-wrap .logo {width: 200px; height: 100px;}
