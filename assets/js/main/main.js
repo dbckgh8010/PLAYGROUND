@@ -36,7 +36,7 @@ $(function() {
     
     typing();
 /*section2 favorite swiper부분*/
-    var mySwiper1 = new Swiper(".sc-about .swiper", {
+    var mySwiper1 = new Swiper(".sc-info .swiper", {
         slidesPerView: 1,
         grabCursor: true,
         loop: true,
@@ -127,7 +127,7 @@ $(function() {
     let pinStart = 80;
     let gap = 30;
 
-    const items = gsap.utils.toArray(".project-item");
+    const items = gsap.utils.toArray(".sc-project .project-item");
 
     ScrollTrigger.matchMedia({
         // 769px 이상일 때
@@ -174,4 +174,62 @@ $(function() {
             });
         }
     });
+
+    $(".sc-about .title-name, .sc-info .title-name, .sc-info .skill-title").each(function() {
+        gsap.from($(this), {
+            scrollTrigger: {
+                trigger: this,
+                start: "top 95%",
+                end: "top 50%",
+                scrub: 2,
+                markers: true,
+            },
+            opacity: 0,
+            x: -200,
+            duration: 1
+        });
+    });
+    $(".sc-about .left-info").each(function() {
+        gsap.from($(this), {
+            scrollTrigger: {
+                trigger: this,
+                start: "top 90%",
+                end: "top top",
+                scrub: 2,
+                markers: true,
+            },
+            opacity: 0,
+            x: -200,
+            duration: 1
+        });
+    });
+    $(".sc-about .about-right").each(function() {
+        gsap.from($(this), {
+            scrollTrigger: {
+                trigger: this,
+                start: "top 90%",
+                end: "top 70%",
+                scrub: 2,
+                markers: true,
+            },
+            opacity: 0,
+            x: 200,
+            duration: 1
+        })
+    });
+    $(".sc-info .html, .sc-info .css, .sc-info .js").each(function() {
+        gsap.from($(this), {
+            scrollTrigger: {
+                trigger: this,
+                start: "top 90%",
+                end: "top 70%",
+                scrub: 2,
+                markers: true,
+            },
+            opacity: 0,
+            x: 200,
+            duration: 1
+        })
+    });
+    
 });
