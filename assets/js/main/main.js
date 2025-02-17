@@ -232,7 +232,6 @@ $(function() {
             trigger: ".sc-banner",
             start: "center top",
             toggleActions: "play none none reverse",
-            markers: true
         },
         opacity: 0,
         duration: 0.5
