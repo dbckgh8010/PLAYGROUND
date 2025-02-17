@@ -192,7 +192,7 @@ $(function() {
         gsap.from($(this), {
             scrollTrigger: {
                 trigger: this,
-                start: "top 90%",
+                start: "top 93%",
                 end: "top top",
                 scrub: 2,
             },
@@ -205,7 +205,7 @@ $(function() {
         gsap.from($(this), {
             scrollTrigger: {
                 trigger: this,
-                start: "top 90%",
+                start: "top 87%",
                 end: "top 70%",
                 scrub: 2,
             },
@@ -227,5 +227,14 @@ $(function() {
             duration: 1
         })
     });
-    
+    gsap.to(".logo", {
+        scrollTrigger: {
+            trigger: ".sc-banner",
+            start: "center top",
+            toggleActions: "play none none reverse",
+            markers: true
+        },
+        opacity: 0,
+        duration: 0.5
+    })
 });
